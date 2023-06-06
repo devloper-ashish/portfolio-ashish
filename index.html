@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="wrapper">
+
+            <div class="elem">
+                <img src="./Capture-removebg-preview.png" alt="">
+            </div>
+
+            <div class="elem">
+                <h3>WEB DEVELOPER</h3>
+            </div>
+
+            <div class="elem">
+                <h3>WE MAKE AWESOME</h3>
+            </div>
+            <div class="elem">
+                <img src="./Capture-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div id="background">
+        <nav>
+            <img src="./Capture-removebg-preview.png" alt="">
+            <div class="right-nav">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <i class="ri-search-line"></i>
+                <i class="ri-menu-3-line"></i>
+                <i id="toggle" class="ri-toggle-fill"></i>
+
+
+            </div>
+        </nav>
+        <div class="sections">
+         <img id="splash2" src="./img3 done.png" alt="">
+            <div class="left">
+                <div class="line"></div>
+                <h4>Hello, I Am 💡 </h4>
+                <h1>Ashish Rathor,</h1>
+                <h5>Full Stack <span> Developer. </span></h5>
+                <div class="playbtn">
+                    <img src="./play btm img.png" alt="">
+                    <h3>See My Work Profile</h3>
+                </div>
+                <div class="contact">
+                    <h3>Contact me</h3>
+                    <h6>Email : <span>ashish444rathor@gmail.com</span></h6>
+                    <h6>Contact Number : <span>+91-6265127664 </span></h6>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./main-removebg-preview.png" alt="">
+            </div>
+
+    
+        </div>
+
+    </div>
+
+
+<script>
+    var toggle = document.querySelector('#toggle');
+    var background = document.querySelector('#background');
+    toggle.addEventListener('click',function(){
+        background.style.transform = 'scale(.8)';
+        background.style.borderRadius = '10px';
+        background.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+    })
+</script>
+</body>
+
+</html>

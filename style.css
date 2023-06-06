@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 200, 200, 0.747);
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+
+#toggle{
+    cursor: pointer;
+    color: rgb(219, 98, 193);
+}
+.wrapper {
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+
+}
+
+.wrapper .elem {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper .elem img {
+    width: 20%;
+}
+
+.wrapper .elem:nth-child(1) {
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+.wrapper .elem:nth-child(2) {
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2.5s both;
+}
+
+.wrapper .elem:nth-child(3) {
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 3.5s both;
+}
+
+@keyframes anim {
+    to {
+        margin-top: -100px;
+    }
+
+}
+
+@keyframes anim2 {
+    to {
+        transform: translateY(-100%);
+    }
+
+}
+
+#background {
+    width: 100%;
+    height: 100vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    background-color: white;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70px;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 125px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+nav .right-nav {
+    display: flex;
+    align-items: center;
+    margin-right: -80px;
+
+}
+
+nav .right-nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: black;
+    font-weight: 650;
+    opacity: .80;
+    letter-spacing: 4px;
+}
+
+nav .right-nav i {
+    margin-left: 40px;
+}
+
+nav .right-nav a:nth-child(2) {
+    opacity: .5;
+}
+
+.sections {
+    width: 100%;
+    height: 84.3%;
+    display: flex;
+    /* background-color: blueviolet; */
+
+}
+.left {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    padding: 100px;
+}
+
+.left .line {
+    width: 70px;
+    height: 3px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.left h4 {
+    font-family: Montserrat;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.left h1 {
+    font-size: 55px;
+    margin-top: 14px;
+}
+
+.left h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    font-weight: 750;
+    color: rgba(48, 48, 49, 0.555);
+}
+
+.left h5 span {
+    opacity: 1;
+    color: rgb(9, 212, 226);
+}
+
+.playbtn img {
+    width: 70px;
+    margin-top: 25px;
+}
+
+.left h3 {
+    font-family: Montserrat;
+    margin-top: 22px;
+    margin-left: 16px;
+
+}
+
+.playbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.contact {
+    margin-top: 55px;
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    opacity: .8;
+    margin-bottom: 13px;
+}
+
+.contact h6 {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.contact h6 span {
+    color: rgb(55, 175, 175);
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.right img {
+    width: 70%;
+}
+
+#splash2 {
+    position: absolute;
+    top: 25%;
+    opacity: .8;
+    right: 1px;
+}
